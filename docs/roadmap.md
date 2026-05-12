@@ -65,9 +65,12 @@
 - [x] `requirements.txt` y `.env` / `.env.example` creados
 - [x] Verificado: programa arranca, conecta a la BD y navega sin errores
 
-### ⏳ Fase 4 — Datos de prueba
-- [ ] Script SQL con datos de prueba (`sql/seed.sql`)
-- [ ] Datos suficientes para demostrar todos los CRUDs y los triggers/SPs
+### ✅ Fase 4 — Datos de prueba
+- [x] Script SQL con datos de prueba (`sql/seed.sql`) — re-ejecutable con TRUNCATE al inicio
+- [x] 6 países, 7 nacionalidades, 8 ciudades, 10 posiciones, 6 entrenadores
+- [x] 2 torneos, 6 equipos, 4 árbitros, 21 jugadores, 6 partidos
+- [x] SPs ejecutados: 8 inscripciones + 3 resultados registrados
+- [x] Tabla de posiciones calculada y verificada (trigger diferencia de goles activo)
 
 ### ⏳ Fase 5 — Preparación para sustentación
 - [ ] Verificar que todo corre en el computador de presentación
@@ -87,7 +90,7 @@ parcial-db-juanjo/
 │   └── roadmap.md          ✅ Este archivo
 ├── sql/
 │   ├── create_db.sql       ✅ Creación completa de la BD
-│   └── seed.sql            ⏳ Datos de prueba
+│   └── seed.sql            ✅ Datos de prueba
 ├── src/
 │   ├── conexion.py         ✅ Módulo de conexión
 │   ├── equipos.py          ✅ CRUD equipos
